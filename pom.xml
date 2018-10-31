@@ -14,7 +14,7 @@
 
     <properties>
         <version.spring-boot>2.0.6.RELEASE</version.spring-boot>
-        <version.camel>2.21.3</version.camel>
+        <version.camel>2.22.1</version.camel>
         <version.cdi>2.0</version.cdi>
         <version.weld>3.0.0.Final</version.weld>
         <version.arquillian.core>1.1.13.Final</version.arquillian.core>
@@ -207,14 +207,14 @@
                 -->
             </plugin>
 
-            <!--<plugin>-->
-                <!--<artifactId>maven-war-plugin</artifactId>-->
-                <!--<version>${version.war.plugin}</version>-->
-                <!--<configuration>-->
-                    <!--&lt;!&ndash; Java EE doesn't require web.xml, Maven needs to catch up! &ndash;&gt;-->
-                    <!--<failOnMissingWebXml>false</failOnMissingWebXml>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${version.war.plugin}</version>
+                <configuration>
+                    <!-- Java EE doesn't require web.xml, Maven needs to catch up! -->
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
 
             <!-- WildFly plug-in to deploy the WAR -->
             <plugin>
