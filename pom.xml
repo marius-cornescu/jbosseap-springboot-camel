@@ -14,9 +14,8 @@
 
     <properties>
         <version.spring-boot>2.0.6.RELEASE</version.spring-boot>
-        <version.camel>2.22.1</version.camel>
-        <version.cdi>2.0</version.cdi>
-        <version.weld>3.0.0.Final</version.weld>
+        <version.camel>2.24.1</version.camel>
+
         <version.arquillian.core>1.1.13.Final</version.arquillian.core>
         <version.arquillian.weld>2.0.0.Beta4</version.arquillian.weld>
         <version.junit>4.12</version.junit>

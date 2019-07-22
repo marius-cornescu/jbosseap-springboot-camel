@@ -33,7 +33,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(CamelSpringBootRunner.class)
-@SpringBootTest(classes = MyCamelApplication.class,
+@SpringBootTest(classes = Application.class,
     properties = "greeting = Hello foo")
 @EnableRouteCoverage
 @MockEndpoints("log:foo") // mock the log:foo endpoint => mock:log:foo which we then use in the testing

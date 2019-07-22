@@ -25,16 +25,20 @@ import org.springframework.stereotype.Component;
  * Use <tt>@Component</tt> to make Camel auto detect this route when starting.
  */
 @Component
-public class MyCamelRouter extends RouteBuilder {
+public class SampleCamelRouter extends RouteBuilder {
+
+    public static final String ROUTE_IN = "route.EapSpringCamel.inbound";
 
     @Override
     public void configure() throws Exception {
-        from("timer:hello?period={{timer.period}}").routeId("hello")
+
+        from("timer:hello?period={{timer.period}}").routeId(ROUTE_IN)
                 .transform().method("myBean", "saySomething")
                 .filter(simple("${body} contains 'foo'"))
                     .to("log:foo")
                 .end()
                 .to("stream:out");
+
     }
 
 }

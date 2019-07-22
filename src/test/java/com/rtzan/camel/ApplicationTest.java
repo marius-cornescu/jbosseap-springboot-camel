@@ -30,9 +30,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(CamelSpringBootRunner.class)
-@SpringBootTest(classes = MyCamelApplication.class)
+@SpringBootTest(classes = Application.class)
 @EnableRouteCoverage
-public class MyCamelApplicationTest {
+public class ApplicationTest {
 
     @Autowired
     private CamelContext camelContext;
