@@ -13,7 +13,7 @@
     <description>An example showing Camel with Spring Boot on JBoSS EAP</description>
 
     <properties>
-        <version.spring-boot>2.0.6.RELEASE</version.spring-boot>
+        <version.spring-boot>2.5.12</version.spring-boot>
         <version.camel>2.24.1</version.camel>
 
         <version.arquillian.core>1.1.13.Final</version.arquillian.core>
